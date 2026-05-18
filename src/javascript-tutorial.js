@@ -1,10 +1,10 @@
 // var vs let
-    // var doesnot have a block scope ie global scope
+    // var has a function scope
     if(true){
         var x = 20
     }
     console.log(x)
-    // let is used for block scope ie local scope
+    // let has block scope
     if(true){
         let y = 20
     }
@@ -20,14 +20,21 @@
         console.log(id)
     })
 
-// Rest Operator (write flexible functions with unknown number of args)
+// Rest Operator (write flexible functions with unknown number of args) (collects remaining parameters in an array)
     const sum = (firstArg, ...otherArgs) => {
         console.log(firstArg)
         console.log(otherArgs) // returns an array of otherArgs [secondArg, thirdArg]
     }
     sum(1,2,3)
 
-// Spread Operator (used to modify state of application in react)
+// Spread Operator (used to modify state of application in react) (spreads array elements or object properties)
     const fruits = ["apple", "mango"]
     const moreFruits = ["kiwi", "orange"]
     const allFruits = [...fruits,...moreFruits,"cherry"] // [apple, mango, kiwi, orange]
+
+
+// React Notes
+
+    // React State
+        // state = manage component data (consists of two parts: getter and setter of the state)
+        // when state value changes the UI gets updated or rerendered automatically 
