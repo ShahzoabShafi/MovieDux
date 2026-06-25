@@ -38,3 +38,5 @@
     // React State
         // state = manage component data (consists of two parts: getter and setter of the state)
         // when state value changes the UI gets updated or rerendered automatically 
+    // React Props
+        // props = passing data to components
